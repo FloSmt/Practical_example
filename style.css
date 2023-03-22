@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 3pc;
+}
+
+.form_search input {
+    width: 25%;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.main {
+    padding: 20px;
+    margin: 1pc;
+    display: inline-flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    background-color: rgb(141, 198, 206);
+    padding: 20px;
+    width: 20%;
+    min-height: 10pc;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    display: flex;
+    align-content: flex-end;
+    transition: background-position 1s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.book:hover {
+    background-position-y: 100%;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 0px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+.book .title {
+    margin: 0;
+    width: 100%;
+    color: white;
+    text-shadow: #000000 2px 2px 5px;
+}
+
+.book .author {
+    margin: 2px;
+    color: white;
+    text-shadow: #000000 2px 2px 5px;
+}
+
+
+.infopage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 0 20% 0 20%;
+}
+
+.infopage h1 {
+    font-size: 40px;
+    
+}
+
+.infopage .description {
+}
+
+.link {
+    color:rgb(91, 205, 240);
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 5px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.link:hover {
+    background-color:rgb(91, 205, 240);
+    color: white;
+}
